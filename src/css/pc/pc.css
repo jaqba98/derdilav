@@ -1,3 +1,1 @@
-@media (min-width: 1024px) {
-    a { color: red; }
-}
+@import url("./nav.css") only screen and (min-width: 1024px);
