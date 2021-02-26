@@ -1,1 +1,4 @@
-@import url("./reset.css");
+@import url("./reset/reset.css");
+@import url("./mobile/mobile.css");
+@import url("./pc/pc.css");
+@import url("./tablet/tablet.css");
