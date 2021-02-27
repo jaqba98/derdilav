@@ -7,6 +7,8 @@ window.onload = () => {
 
    const hamburgerLineBottom = document.getElementById('hamburger-line-bottom');
 
+   const menu = document.getElementById('menu');
+
    const hamburgerOpen = () => {
       hamburgerLineTop.style.transform = 'rotate(45deg)';
       hamburgerLineTop.style.margin = '-5px auto';
@@ -16,6 +18,8 @@ window.onload = () => {
 
       hamburgerLineBottom.style.transform = 'rotate(-45deg)';
       hamburgerLineBottom.style.margin = '-5px auto';
+
+      menu.style.transform = 'translateX(0%)';
    };
 
    const hamburgerClose = () => {
@@ -27,6 +31,8 @@ window.onload = () => {
 
       hamburgerLineBottom.style.transform = 'rotate(0deg)';
       hamburgerLineBottom.style.margin = '3px auto';
+
+      menu.style.transform = 'translateX(-100%)';
    };
 
    hamburgerButton.addEventListener('click', () => {
