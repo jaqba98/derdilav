@@ -5,6 +5,7 @@ window.onload = () => {
    const hamburgerLineBottom = document.getElementById('hamburger-line-bottom');
    const menu = document.getElementById('menu');
    const content = document.getElementById('content');
+   let canCloseMenu = false;
 
    const hamburgerOpen = () => {
       hamburgerLineTop.style.transform = 'rotate(45deg)';
@@ -22,6 +23,7 @@ window.onload = () => {
       hamburgerLineTop.style.margin = '3px auto';
       hamburgerLineMiddle.style.transform = 'translate(0px)';
       hamburgerLineMiddle.style.opacity = '1';
+      hamburgerLineMiddle.style.zIndex = '0';
       hamburgerLineBottom.style.transform = 'rotate(0deg)';
       hamburgerLineBottom.style.margin = '3px auto';
       menu.style.transform = 'translateX(-100%)';
@@ -38,8 +40,16 @@ window.onload = () => {
       if (window.innerWidth > 767) {
          hamburgerClose();
          menu.style.transform = 'translateX(0%)';
-      } else {
+         canCloseMenu = true;
+      } else if(canCloseMenu) {
          menu.style.transform = 'translateX(-100%)';
+         canCloseMenu = false;
       }
-   })
+   });
+
+   setInterval(() => {
+      if (hamburgerLineMiddle.style.transform === 'translate(-150px)') {
+         hamburgerLineMiddle.style.zIndex = '-1';
+      }
+   }, 1000);
 };

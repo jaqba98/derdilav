@@ -26,6 +26,6 @@ nav {
 
                 #menu > li > a:hover {
                     color: white;
-                    border: 2px solid whitesmoke;
+                    border: 2px solid white;
                     transition: all .5s ease-in-out;
                 }

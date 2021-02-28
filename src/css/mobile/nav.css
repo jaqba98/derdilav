@@ -18,12 +18,16 @@ nav {
     }
 
         #hamburger > div {
-            width: 60%;
+            width: 75%;
             height: 2px;
             margin: 3px auto;
             background-color: white;
-            transition: all .2s ease-in-out;
         }
+
+        #hamburger-line-top,
+        #hamburger-line-bottom { transition: all .5s ease-in-out; }
+
+        #hamburger-line-middle { transition: all 1s ease-in-out; }
 
     #menu {
         top: 60px;
@@ -33,19 +37,19 @@ nav {
         background-color: #191919;
         transform: translateX(-100%);
         overflow-y: auto;
-        transition: all .2s ease-in-out;
+        transition: transform 1s ease-in-out;
     }
 
         #menu > li { line-height: 60px; }
 
-            #menu > li > a:first-child { border-top: 1px solid rgba(255, 255, 255, .05); }
+            #menu > li > a:first-child { border-top: 1px solid rgba(255, 255, 255, .1); }
 
             #menu > li > a {
                 display: block;
                 text-align: center;
                 width: 100%;
                 color: grey;
-                border-bottom: 1px solid rgba(255, 255, 255, .05);
+                border-bottom: 1px solid rgba(255, 255, 255, .1);
                 text-transform: uppercase;
             }
 

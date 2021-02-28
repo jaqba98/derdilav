@@ -1,4 +1,5 @@
-@import "reset/reset.css";
+@import "reset.css";
+@import "scrollbar.css";
 @import "mobile/mobile.css";
 @import "tablet/tablet.css";
 @import "pc/pc.css";
