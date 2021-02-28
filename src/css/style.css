@@ -1,5 +1,4 @@
-@import url("./reset/reset.css");
-@import url("./scrollbar/scrollbar.css");
-@import url("./mobile/mobile.css");
-@import url("./pc/pc.css");
-@import url("./tablet/tablet.css");
+@import "reset/reset.css";
+@import "mobile/mobile.css";
+@import "tablet/tablet.css";
+@import "pc/pc.css";
