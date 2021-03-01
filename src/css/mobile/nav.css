@@ -42,14 +42,14 @@ nav {
 
         #menu > li { line-height: 60px; }
 
-            #menu > li > a:first-child { border-top: 1px solid rgba(255, 255, 255, .1); }
+            #menu > li > a:first-child { border-top: 1px solid rgba(150, 150, 150, .1); }
 
             #menu > li > a {
                 display: block;
                 text-align: center;
                 width: 100%;
                 color: grey;
-                border-bottom: 1px solid rgba(255, 255, 255, .1);
+                border-bottom: 1px solid rgba(150, 150, 150, .1);
                 text-transform: uppercase;
             }
 
