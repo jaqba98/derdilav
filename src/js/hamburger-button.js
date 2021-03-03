@@ -34,6 +34,8 @@ window.onload = () => {
       hamburgerLineMiddle.style.transform === 'translate(-150px)' ?
           hamburgerClose() :
           hamburgerOpen();
+
+      menu.style.transition = 'transform 1s ease-in-out';
    });
 
    window.addEventListener('resize', () => {
@@ -41,6 +43,7 @@ window.onload = () => {
          hamburgerClose();
          menu.style.transform = 'translateX(0%)';
          canCloseMenu = true;
+         menu.style.transition = 'transform 0s ease-in-out';
       } else if(canCloseMenu) {
          menu.style.transform = 'translateX(-100%)';
          canCloseMenu = false;

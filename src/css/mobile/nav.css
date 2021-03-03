@@ -37,7 +37,6 @@ nav {
         background-color: #191919;
         transform: translateX(-100%);
         overflow-y: auto;
-        transition: transform 1s ease-in-out;
     }
 
         #menu > li { line-height: 60px; }

@@ -1,12 +1,13 @@
 header {
     width: 100%;
-    height: calc(100vh - 60px);
-    background-color: #1e1e1e;
+    background-color: #191919;
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: center;
 }
 
     header img {
-        width: 300px;
+        width: 150px;
+        margin: 30px;
     }
