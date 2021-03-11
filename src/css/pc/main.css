@@ -4,7 +4,6 @@ main {
 
     #about,
     #support{
-        flex: 1;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -13,9 +12,11 @@ main {
     }
 
     #about {
+        flex: 2;
         background-color: white;
     }
 
     #support {
+        flex: 1;
         background-color: whitesmoke;
     }
