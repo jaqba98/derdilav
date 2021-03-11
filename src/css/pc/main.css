@@ -1,9 +1,11 @@
 main {
     display: flex;
+    flex-wrap: wrap;
 }
 
     #about,
-    #support{
+    #support,
+    #games {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -12,11 +14,17 @@ main {
     }
 
     #about {
-        flex: 2;
+        flex: 70%;
         background-color: white;
     }
 
     #support {
-        flex: 1;
+        flex: 30%;
         background-color: whitesmoke;
+    }
+
+    #games {
+        flex: 100%;
+        background-color: rgb(40, 40, 40);
+        color: lightgrey;
     }

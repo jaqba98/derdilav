@@ -4,7 +4,8 @@ main {
 }
 
     #about,
-    #support{
+    #support,
+    #games {
         flex: 100%;
         display: flex;
         flex-direction: column;
@@ -19,4 +20,9 @@ main {
 
     #support {
         background-color: whitesmoke;
+    }
+
+    #games {
+        background-color: rgb(40, 40, 40);
+        color: lightgrey;
     }
