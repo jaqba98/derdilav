@@ -28,3 +28,11 @@ main {
         background-color: rgb(40, 40, 40);
         color: lightgrey;
     }
+
+    #footer {
+        background-color: black;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
