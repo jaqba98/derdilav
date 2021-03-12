@@ -1,3 +1,4 @@
 @import "nav.css" only screen and (min-width: 767px) and (max-width: 1024px);
 @import "header.css" only screen and (min-width: 767px) and (max-width: 1024px);
 @import "main.css" only screen and (min-width: 767px) and (max-width: 1024px);
+@import "social-media.css" only screen and (min-width: 767px) and (max-width: 1024px);
