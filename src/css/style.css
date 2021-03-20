@@ -221,6 +221,10 @@ main {
   color: lightgrey;
 }
 
+#contact > form > * {
+  display: block;
+}
+
 /* Footer */
 
 #footer {
