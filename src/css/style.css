@@ -215,12 +215,20 @@ main {
   background-color: red;
 }
 
+@media screen and (min-width: 767px) {
+  #team { flex: 50%; }
+}
+
 /* Contact */
 
 #contact {
   flex: 100%;
   background-color: black;
   color: lightgrey;
+}
+
+@media screen and (min-width: 767px) {
+  #contact { flex: 50%; }
 }
 
 #contact > form > * {
