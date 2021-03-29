@@ -208,6 +208,42 @@ main {
   color: lightgrey;
 }
 
+#gameList {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+figure > img {
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .flex25 {
+    flex: calc(25% - 40px);
+    margin: 20px;
+  }
+  
+  .flex50 {
+    flex: calc(50% - 40px);
+    margin: 20px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  .flex25, .flex50 {
+    flex: calc(50% - 40px);
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .flex25, .flex50 {
+    flex: calc(100% - 40px);
+    margin: 20px;
+  }
+}
+
 /* Teams */
 
 #team {
