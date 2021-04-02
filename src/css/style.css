@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');  
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
 
 /* Reset */
 * {
@@ -7,7 +7,7 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 /* Scrollbar */
@@ -259,7 +259,7 @@ figure > img {
 
 #contact {
   flex: 100%;
-  background-color: black;
+  background-color: grey;
   color: lightgrey;
 }
 
@@ -303,11 +303,22 @@ input[type="submit"] {
 
 #footer {
   background-color: black;
-  color: darkgrey;
-  font-size: 20px;
+  color: white;
+  font-size: 14px;
   text-transform: uppercase;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 25px;
+  padding: 10px;
+}
+
+#footer a {
+  color: white;
+}
+
+@media screen and (max-width: 250px) {
+  #footer {
+    font-size: 8px;
+    padding: 5px;
+  }
 }
