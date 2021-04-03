@@ -8,6 +8,7 @@
   list-style: none;
   box-sizing: border-box;
   font-family: 'Roboto Condensed', sans-serif;
+  font-weight: lighter;
 }
 
 /* Scrollbar */
@@ -186,6 +187,14 @@ main {
   background-color: white;
 }
 
+#about h1 {
+  margin-bottom: 10px;
+}
+
+#about p {
+  text-align: justify;
+}
+
 @media screen and (min-width: 767px) {
   #about { flex: 70%; }
 }
@@ -205,8 +214,12 @@ main {
 #games {
   flex: 100%;
   padding: 0;
-  background-color: rgb(40, 40, 40);
-  color: lightgrey;
+  background-color: black;
+}
+
+#games > h1 {
+  color: white;
+  padding: 20px;
 }
 
 #gameList {
@@ -225,28 +238,39 @@ figure > img {
 
 figure > legend {
   position: absolute;
+  top: 0;
   bottom: 0px;
-  padding: 10px;
   left: 0;
   right: 0;
   text-align: center;
   background-color: rgb(0, 0, 0, 0.5);
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  opacity: 0;
+}
+
+figure > legend:hover {
+  opacity: 1;
+  transition: 0.5s ease-in-out;
 }
 
 @media screen and (min-width: 1024px) {
   .flex25 { flex: 25%; }
   .flex50 { flex: 50%; }
+  .flex100 { flex: 100%; }
 }
 
 @media screen and (min-width: 767px) and (max-width: 1024px) {
-  .flex25, .flex50 {
+  .flex25, .flex50, .flex100 {
     flex: 50%;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .flex25, .flex50 {
+  .flex25, .flex50, .flex100 {
     flex: 100%;
   }
 }
@@ -255,7 +279,7 @@ figure > legend {
 
 #team {
   flex: 100%;
-  background-color: red;
+  background-color: white;
 }
 
 @media screen and (min-width: 767px) {
@@ -266,8 +290,7 @@ figure > legend {
 
 #contact {
   flex: 100%;
-  background-color: grey;
-  color: lightgrey;
+  background-color: whitesmoke;
 }
 
 @media screen and (min-width: 767px) {
@@ -280,6 +303,7 @@ figure > legend {
 }
 
 #contact > h1 {
+  color: grey;
   margin-bottom: 25px;
 }
 
@@ -297,13 +321,28 @@ figure > legend {
   }
 }
 
+label {
+  color: grey;
+}
+
 input, textarea {
+  outline: none;
   border: none;
+  background-color: lightgrey;
   border-radius: 5px;
+  font-size: 16px;
+}
+
+textarea {
+  resize: none;
 }
 
 input[type="submit"] {
+  border: none;
   width: auto;
+  color: white;
+  background-color: black;
+  cursor: pointer;
 }
 
 /* Footer */
