@@ -50,6 +50,14 @@ window.onload = () => {
       }
    });
 
+   document.querySelectorAll('#menu > li > a').forEach(item => {
+      item.addEventListener('click', event => {
+         hamburgerClose();
+         menu.style.transform = 'translateX(-100%)';
+         canCloseMenu = false;
+      });
+   });
+
    setInterval(() => {
       if (hamburgerLineMiddle.style.transform === 'translate(-150px)') {
          hamburgerLineMiddle.style.zIndex = '-1';
