@@ -52,9 +52,11 @@ window.onload = () => {
 
    document.querySelectorAll('#menu > li > a').forEach(item => {
       item.addEventListener('click', event => {
-         hamburgerClose();
-         menu.style.transform = 'translateX(-100%)';
-         canCloseMenu = false;
+         if (window.innerWidth <= 767) {
+            hamburgerClose();
+            menu.style.transform = 'translateX(-100%)';
+            canCloseMenu = false;
+         }
       });
    });
 
