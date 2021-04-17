@@ -172,18 +172,46 @@ main {
 
 /* Social media */
 
-#socialMedia {
-  flex: 100%;
-  display: flex;
-  background-color: black;
+@media screen and (max-width: 767px) {
+  #socialMedia {
+    flex: 100%;
+    display: flex;
+    background-color: black;
+  }
+  
+  #socialMedia > a {
+    flex: 1;
+    font-size: 14px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
 }
 
-#socialMedia > a {
-  flex: 1;
-  font-size: 14px;
-  color: white;
-  padding: 10px;
-  text-align: center;
+@media screen and (min-width: 767px) {
+  #socialMedia {
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+  }
+
+  #content {
+    margin-left: 36px;
+  }
+  
+  #socialMedia > a {
+    padding: 10px;
+    flex: 1;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    writing-mode: vertical-rl;
+  }
 }
 
 .facebook { background-color: #3b5998; }
