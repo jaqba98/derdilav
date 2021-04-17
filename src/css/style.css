@@ -275,6 +275,13 @@ main {
   width: 100%;
 }
 
+#gameList > p {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  color: gray;
+}
+
 figure {
   position: relative;
   height: 50vh;
