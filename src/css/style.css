@@ -234,6 +234,24 @@ main {
   background-color: whitesmoke;
 }
 
+#support > form {
+  animation: supportButton 2s infinite;
+}
+
+@keyframes supportButton {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 @media screen and (min-width: 767px) {
   #support { flex: 30%; }
 }
