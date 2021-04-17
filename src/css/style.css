@@ -282,18 +282,18 @@ main {
   color: gray;
 }
 
-figure {
+#gameList > figure {
   position: relative;
   height: 50vh;
 }
 
-figure > img {
+#gameList > figure > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-figure > legend {
+#gameList > figure > legend {
   position: absolute;
   top: 0;
   bottom: 0px;
@@ -309,7 +309,7 @@ figure > legend {
   opacity: 0;
 }
 
-figure > legend:hover {
+#gameList > figure > legend:hover {
   opacity: 1;
   transition: 0.5s ease-in-out;
 }
@@ -337,6 +337,19 @@ figure > legend:hover {
 #team {
   flex: 100%;
   background-color: white;
+  position: relative;
+  min-height: 100vh;
+  text-align: center;
+}
+
+#team > .person {
+  position: absolute;
+  width: 20%;
+}
+
+#team > .person > img {
+  box-shadow: 5px 5px 3px grey;
+  width: 100%;
 }
 
 @media screen and (min-width: 767px) {
