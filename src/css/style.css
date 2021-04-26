@@ -242,6 +242,11 @@ main {
 
 #about {
   background-color: white;
+  border-right: 1px solid lightgray;
+}
+
+#about > div {
+  padding: 30px;
 }
 
 #about h1 {
@@ -259,25 +264,7 @@ main {
 /* Support */
 
 #support {
-  background-color: whitesmoke;
-}
-
-#support > form {
-  animation: supportButton 2s infinite;
-}
-
-@keyframes supportButton {
-  0% {
-    transform: scale(1);
-  }
-
-  25% {
-    transform: scale(.9);
-  }
-
-  100% {
-    transform: scale(1);
-  }
+  background-color: transparent;
 }
 
 @media screen and (min-width: 767px) {
@@ -289,7 +276,7 @@ main {
 #games {
   flex: 100%;
   padding: 0;
-  background-color: black;
+  background-color: rgb(25, 25, 25);
 }
 
 #games > h1 {
@@ -306,8 +293,8 @@ main {
 #gameList > p {
   width: 100%;
   text-align: center;
-  padding: 20px;
-  color: gray;
+  padding: 40px;
+  color: lightgray;
 }
 
 #gameList > figure {
