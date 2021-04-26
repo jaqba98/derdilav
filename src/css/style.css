@@ -12,13 +12,13 @@
 }
 
 /* Scrollbar */
-::-webkit-scrollbar { width: 7px; }
+/* ::-webkit-scrollbar { width: 7px; }
 
 ::-webkit-scrollbar-track { background-color: #000000; }
 
 ::-webkit-scrollbar-thumb { background-color: #FFFFFF; }
 
-::-webkit-scrollbar-thumb:hover { background-color: #FFFFFF; }
+::-webkit-scrollbar-thumb:hover { background-color: #FFFFFF; } */
 
 /* Html */
 
@@ -172,46 +172,18 @@ main {
 
 /* Social media */
 
-@media screen and (max-width: 767px) {
-  #socialMedia {
-    flex: 100%;
-    display: flex;
-    background-color: black;
-  }
-  
-  #socialMedia > a {
-    flex: 1;
-    font-size: 14px;
-    color: white;
-    padding: 10px;
-    text-align: center;
-  }
+#socialMedia {
+  flex: 100%;
+  display: flex;
+  background-color: black;
 }
 
-@media screen and (min-width: 767px) {
-  #socialMedia {
-    z-index: 3;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-  }
-
-  #content {
-    margin-left: 29px;
-  }
-  
-  #socialMedia > a {
-    padding: 5px;
-    flex: 1;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    writing-mode: vertical-rl;
-  }
+#socialMedia > a {
+  flex: 1;
+  font-size: 14px;
+  color: white;
+  padding: 10px;
+  text-align: center;
 }
 
 .facebook { background-color: #3b5998; }
@@ -276,7 +248,7 @@ main {
 #games {
   flex: 100%;
   padding: 0;
-  background-color: rgb(25, 25, 25);
+  background-color: black;
 }
 
 #games > h1 {
@@ -351,7 +323,7 @@ main {
 
 #team {
   flex: 100%;
-  background-color: white;
+  background-color: whitesmoke;
   position: relative;
   min-height: 100vh;
   text-align: center;
@@ -363,7 +335,6 @@ main {
 }
 
 #team > .person > img {
-  box-shadow: 5px 5px 3px grey;
   width: 100%;
 }
 
@@ -375,7 +346,7 @@ main {
 
 #contact {
   flex: 100%;
-  background-color: whitesmoke;
+  background-color: lightgray;
 }
 
 @media screen and (min-width: 767px) {
@@ -430,26 +401,83 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-/* Footer */
+/* ----------------------------------------- Footer ----------------------------------------- */
 
-#footer {
-  background-color: black;
-  color: white;
-  font-size: 14px;
-  text-transform: uppercase;
+footer {
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 10px;
+  flex-direction: column;
+  text-transform: uppercase;
+  padding: 100px 0;
+  color: #ffffff;
+  background: #000000;
 }
 
-#footer a {
-  color: white;
+footer > header {
+  width: 75vw;
+  padding-bottom: 20px;
+  background-color: transparent;
+  border-bottom: 1px solid #ffffff;
 }
 
-@media screen and (max-width: 250px) {
-  #footer {
-    font-size: 8px;
-    padding: 5px;
+footer > header > h2 {
+  flex: 1;
+  text-align: right;
+}
+
+footer > header > h2:first-child { text-align: left; }
+
+footer > article {
+  display: flex;
+  text-align: right;
+  width: 75%;
+  margin-top: 20px;
+}
+
+footer > article > section {
+  flex: 1;
+  color: #ffffff;
+}
+
+footer > article > section:first-child { text-align: left; }
+
+footer a {
+  margin-right: 10px;
+  color: #808080;
+}
+
+footer a:hover {
+  color: #ffffff;
+  transition: color .5s ease-in-out;
+}
+
+@media screen and (min-width: 670px) and (max-width: 1024px) {
+  footer a {
+    display: block;
+    margin-bottom: 10px;
   }
+}
+
+@media screen and (max-width: 670px) {
+  footer > header { display: block; }
+
+  footer > header > h2:first-child { font-size: 30px; }
+
+  footer > header > h2 {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  footer > article {
+    display: block;
+    text-align: left;
+  }
+
+  footer > article > section:first-child > a {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  footer > article > section { margin-bottom: 20px; }
 }
