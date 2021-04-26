@@ -201,11 +201,11 @@ main {
   }
 
   #content {
-    margin-left: 36px;
+    margin-left: 29px;
   }
   
   #socialMedia > a {
-    padding: 10px;
+    padding: 5px;
     flex: 1;
     font-size: 16px;
     color: white;
