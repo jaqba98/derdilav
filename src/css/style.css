@@ -172,22 +172,33 @@ html {
 
 /* ----------------------------------------------------- About ------------------------------------------------------ */
 
-#about { background-color: whitesmoke; }
-
-#aboutContent { padding: 50px; }
+#about { background-color: white; }
 
 #aboutContent > h2 {
   font-size: 30px;
   color: dimgrey;
-  padding-bottom: 20px;
   margin-bottom: 20px;
-  border-bottom: 1px solid lightgrey;
 }
 
 #aboutContent > p {
   text-align: justify;
   color: dimgrey;
-  font-size: 18px;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  #about {
+    width: 100%;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  #aboutContent { width: 960px; }
+}
+
+@media screen and (max-width: 1024px) {
+  #aboutContent { padding: 50px }
 }
 
 /* Games */
