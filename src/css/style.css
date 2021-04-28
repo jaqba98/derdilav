@@ -149,19 +149,25 @@ html {
   }
 }
 
-/* Header */
-header {
+/* ----------------------------------------------------- Header ----------------------------------------------------- */
+
+#home {
   width: 100%;
-  background-color: #191919;
+  background-color: #000000;
   display: flex;
   justify-content: center;
-  align-items: center;
-  align-content: center;
 }
 
-header img {
+#home > img {
   width: 150px;
-  margin: 30px;
+  margin: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  #home > img {
+    width: 50%;
+    margin: 60px;
+  }
 }
 
 /* Main */
