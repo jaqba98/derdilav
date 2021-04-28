@@ -190,16 +190,6 @@ html {
   font-size: 18px;
 }
 
-/* Support */
-
-#support {
-  background-color: transparent;
-}
-
-@media screen and (min-width: 767px) {
-  #support { flex: 30%; }
-}
-
 /* Games */
 
 #games {
