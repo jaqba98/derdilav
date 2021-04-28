@@ -170,12 +170,6 @@ html {
   }
 }
 
-/* Main */
-main {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 /* Social media */
 
 #socialMedia {
@@ -200,43 +194,24 @@ main {
 
 .steam { background-color: rgb(25, 25, 25); }
 
-/* All in main without social media */
+/* ----------------------------------------------------- About ------------------------------------------------------ */
 
-#about, #support, #games, #team, #contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 50px;
+#about { background-color: whitesmoke; }
+
+#aboutContent { padding: 50px; }
+
+#aboutContent > h2 {
+  font-size: 30px;
+  color: dimgrey;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid lightgrey;
 }
 
-@media screen and (max-width: 767px) {
-  #about, #support, #games, #team, #contact {
-    flex: 100%;
-  }
-}
-
-/* About */
-
-#about {
-  background-color: white;
-  border-right: 1px solid lightgray;
-}
-
-#about > div {
-  padding: 30px;
-}
-
-#about h1 {
-  margin-bottom: 10px;
-}
-
-#about p {
+#aboutContent > p {
   text-align: justify;
-}
-
-@media screen and (min-width: 767px) {
-  #about { flex: 70%; }
+  color: dimgrey;
+  font-size: 18px;
 }
 
 /* Support */
