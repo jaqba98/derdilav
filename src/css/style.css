@@ -283,11 +283,11 @@ main {
 #gameList > figure > legend {
   position: absolute;
   top: 0;
-  bottom: 0px;
+  bottom: 0;
   left: 0;
   right: 0;
   text-align: center;
-  background-color: rgb(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   display: flex;
   align-items: center;
@@ -401,9 +401,9 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-/* ----------------------------------------- Footer ----------------------------------------- */
+/* ----------------------------------------------------- Footer ----------------------------------------------------- */
 
-footer {
+#footer {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -413,71 +413,74 @@ footer {
   background: #000000;
 }
 
-footer > header {
-  width: 75vw;
+#footer > header {
+  width: 75%;
   padding-bottom: 20px;
   background-color: transparent;
   border-bottom: 1px solid #ffffff;
 }
 
-footer > header > h2 {
-  flex: 1;
-  text-align: right;
-}
+#footer > header > h2 { flex: 1; }
 
-footer > header > h2:first-child { text-align: left; }
+#footer > header > h2:nth-child(1) { text-align: left; }
 
-footer > article {
+#footer > header > h2:nth-child(2) { text-align: right; }
+
+.socialMedia {
   display: flex;
-  text-align: right;
   width: 75%;
   margin-top: 20px;
 }
 
-footer > article > section {
+.socialMediaLinks, .socialMedia > p {
   flex: 1;
   color: #ffffff;
 }
 
-footer > article > section:first-child { text-align: left; }
+.socialMediaLinks { text-align: left; }
 
-footer a {
+.socialMedia > p { text-align: right; }
+
+.socialMediaLinks > a {
   margin-right: 10px;
   color: #808080;
 }
 
-footer a:hover {
+.socialMediaLinks > a:hover {
   color: #ffffff;
   transition: color .5s ease-in-out;
 }
 
-@media screen and (min-width: 670px) and (max-width: 1024px) {
-  footer a {
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  .socialMediaLinks > a {
     display: block;
-    margin-bottom: 10px;
+    margin: auto auto 10px;
   }
 }
 
-@media screen and (max-width: 670px) {
-  footer > header { display: block; }
+@media screen and (max-width: 767px) {
+  #footer > header { display: block; }
 
-  footer > header > h2:first-child { font-size: 30px; }
-
-  footer > header > h2 {
-    text-align: left;
-    margin-bottom: 10px;
+  #footer > header > h2 {
     font-size: 16px;
   }
 
-  footer > article {
-    display: block;
+  #footer > header > h2:nth-child(1) {
     text-align: left;
+    margin-bottom: 10px;
   }
 
-  footer > article > section:first-child > a {
+  #footer > header > h2:nth-child(2) { text-align: left; }
+
+  .socialMedia { display: block; }
+
+  .socialMediaLinks > a {
     display: block;
     margin-bottom: 10px;
   }
 
-  footer > article > section { margin-bottom: 20px; }
+  .socialMedia > p {
+    text-align: left;
+    margin-top: 20px;
+  }
 }

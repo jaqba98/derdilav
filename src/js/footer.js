@@ -1,11 +1,21 @@
-window.addEventListener('resize', () => updateFooter());
+class Footer {
+    constructor() {
+        this.footer = document.getElementById('footer');
+    }
 
-const updateFooter = () => {
-    const footer = document.getElementById('footer');
-    const height = window.innerHeight - footer.offsetTop;
-    height > 0 ?
-        footer.style.minHeight = height.toString().concat('px') :
-        footer.style.minHeight = 'auto';
-};
+    update() {
+        const height = window.innerHeight - this.footer.offsetTop;
 
-updateFooter();
+        this.footer.style.minHeight = this.getHeight(height);
+    }
+
+    getHeight(height) {
+        return height > 0 ? height.toString().concat('px') : 'auto';
+    }
+}
+
+const footer = new Footer();
+
+window.onload = () => footer.update();
+
+window.addEventListener('resize', () => footer.update());
