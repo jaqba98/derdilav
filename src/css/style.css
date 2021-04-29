@@ -211,16 +211,15 @@ html {
   }
 }
 
-/* Games */
+/* ----------------------------------------------------- Games ------------------------------------------------------ */
 
 #games {
-  flex: 100%;
-  padding: 0;
-  background-color: black;
+  background-color: whitesmoke;
 }
 
 #games > h1 {
-  color: white;
+  text-align: center;
+  color: black;
   padding: 20px;
 }
 

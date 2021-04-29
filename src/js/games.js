@@ -26,3 +26,7 @@ if(games.length > 0) {
 } else {
   gameList.innerHTML = '<p>We not have any game yet 😥</p>';
 }
+
+class Games {
+
+}
