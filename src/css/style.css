@@ -172,7 +172,9 @@ html {
 
 /* ----------------------------------------------------- About ------------------------------------------------------ */
 
-#about { background-color: white; }
+#about {
+  background-color: white;
+}
 
 #aboutContent > h2 {
   font-size: 30px;
@@ -199,6 +201,14 @@ html {
 
 @media screen and (max-width: 1024px) {
   #aboutContent { padding: 50px }
+
+  #aboutContent > h2 {
+    font-size: 20px;
+  }
+
+  #aboutContent > p {
+    font-size: 16px;
+  }
 }
 
 /* Games */
