@@ -88,10 +88,10 @@ nav {
     background-color: white;
   }
   
-  #hamburger-line-top,
-  #hamburger-line-bottom { transition: all .5s ease-in-out; }
+  #hamburgerLineTop,
+  #hamburgerLineBottom { transition: all .5s ease-in-out; }
   
-  #hamburger-line-middle { transition: all 1s ease-in-out; }
+  #hamburgerLineMiddle { transition: all 1s ease-in-out; }
   
   #menu {
     top: 60px;
@@ -304,6 +304,7 @@ nav {
 
 .personDescription > p {
   text-align: justify;
+  font-size: 25px;
 }
 
 .personSocialMedia {

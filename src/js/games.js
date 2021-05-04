@@ -1,16 +1,16 @@
 class Games {
   constructor() {
     this.games = [
-      { src: 'https://ocdn.eu/images/pulscms/Njk7MDA_/911e000e1049a96a69232a90e0d8f856.jpg', name: 'Wiedźmin 3' },
-      { src: 'https://ocdn.eu/images/pulscms/Njk7MDA_/911e000e1049a96a69232a90e0d8f856.jpg', name: 'Wiedźmin 3' },
-      { src: 'https://ocdn.eu/images/pulscms/Njk7MDA_/911e000e1049a96a69232a90e0d8f856.jpg', name: 'Wiedźmin 3' },
-      { src: 'https://ocdn.eu/images/pulscms/Njk7MDA_/911e000e1049a96a69232a90e0d8f856.jpg', name: 'Wiedźmin 3' },
-      { src: 'https://ocdn.eu/images/pulscms/Njk7MDA_/911e000e1049a96a69232a90e0d8f856.jpg', name: 'Wiedźmin 3' },
-      { src: 'https://ocdn.eu/images/pulscms/Njk7MDA_/911e000e1049a96a69232a90e0d8f856.jpg', name: 'Wiedźmin 3' },
-      { src: 'https://ocdn.eu/images/pulscms/Njk7MDA_/911e000e1049a96a69232a90e0d8f856.jpg', name: 'Wiedźmin 3' },
-      { src: 'https://ocdn.eu/images/pulscms/Njk7MDA_/911e000e1049a96a69232a90e0d8f856.jpg', name: 'Wiedźmin 3' },
-      { src: 'https://ocdn.eu/images/pulscms/Njk7MDA_/911e000e1049a96a69232a90e0d8f856.jpg', name: 'Wiedźmin 3' },
-      { src: 'https://ocdn.eu/images/pulscms/Njk7MDA_/911e000e1049a96a69232a90e0d8f856.jpg', name: 'Wiedźmin 3' }
+      // { src: 'https://ocdn.eu/images/pulscms/Njk7MDA_/911e000e1049a96a69232a90e0d8f856.jpg', name: 'Wiedźmin 3' },
+      // { src: 'https://ocdn.eu/images/pulscms/Njk7MDA_/911e000e1049a96a69232a90e0d8f856.jpg', name: 'Wiedźmin 3' },
+      // { src: 'https://ocdn.eu/images/pulscms/Njk7MDA_/911e000e1049a96a69232a90e0d8f856.jpg', name: 'Wiedźmin 3' },
+      // { src: 'https://ocdn.eu/images/pulscms/Njk7MDA_/911e000e1049a96a69232a90e0d8f856.jpg', name: 'Wiedźmin 3' },
+      // { src: 'https://ocdn.eu/images/pulscms/Njk7MDA_/911e000e1049a96a69232a90e0d8f856.jpg', name: 'Wiedźmin 3' },
+      // { src: 'https://ocdn.eu/images/pulscms/Njk7MDA_/911e000e1049a96a69232a90e0d8f856.jpg', name: 'Wiedźmin 3' },
+      // { src: 'https://ocdn.eu/images/pulscms/Njk7MDA_/911e000e1049a96a69232a90e0d8f856.jpg', name: 'Wiedźmin 3' },
+      // { src: 'https://ocdn.eu/images/pulscms/Njk7MDA_/911e000e1049a96a69232a90e0d8f856.jpg', name: 'Wiedźmin 3' },
+      // { src: 'https://ocdn.eu/images/pulscms/Njk7MDA_/911e000e1049a96a69232a90e0d8f856.jpg', name: 'Wiedźmin 3' },
+      // { src: 'https://ocdn.eu/images/pulscms/Njk7MDA_/911e000e1049a96a69232a90e0d8f856.jpg', name: 'Wiedźmin 3' }
     ];
     this.gameList = document.getElementById('gameList');
   }
