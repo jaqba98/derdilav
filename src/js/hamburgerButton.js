@@ -3,7 +3,7 @@ const hamburgerLineTop = document.getElementById('hamburgerLineTop');
 const hamburgerLineMiddle = document.getElementById('hamburgerLineMiddle');
 const hamburgerLineBottom = document.getElementById('hamburgerLineBottom');
 const menu = document.getElementById('menu');
-const content = document.getElementById('content');
+const container = document.getElementById('container');
 let canCloseMenu = false;
 
 const hamburgerOpen = () => {
@@ -14,7 +14,7 @@ const hamburgerOpen = () => {
    hamburgerLineBottom.style.transform = 'rotate(-45deg)';
    hamburgerLineBottom.style.margin = '-5px auto';
    menu.style.transform = 'translateX(0%)';
-   content.style.overflow = 'hidden';
+   container.style.overflow = 'hidden';
 };
 
 const hamburgerClose = () => {
@@ -26,7 +26,7 @@ const hamburgerClose = () => {
    hamburgerLineBottom.style.transform = 'rotate(0deg)';
    hamburgerLineBottom.style.margin = '3px auto';
    menu.style.transform = 'translateX(-100%)';
-   content.style.overflow = 'auto';
+   container.style.overflow = 'auto';
 };
 
 hamburgerButton.addEventListener('click', () => {
