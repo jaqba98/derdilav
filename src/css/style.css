@@ -91,7 +91,7 @@ nav {
 
   #menu > li > a {
     width: 100%;
-    color: dimgrey;
+    color: white;
     display: block;
     font-size: 16px;
     text-align: center;
@@ -99,7 +99,7 @@ nav {
   }
 
   #menu > li > a:focus {
-    background-color: rgba(200, 200, 200, 0.1);
+    background-color: gray;
   }
 }
 
