@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 /* RESET */
 
@@ -174,39 +174,57 @@ nav {
   #logo { width: 40%; }
 }
 
-/* ----------------------------------------------------- About ------------------------------------------------------ */
+/* ABOUT */
 
-/*#about {*/
-/*  display: flex;*/
-/*  width: calc(100% - 100px);*/
-/*  margin: 50px;*/
-/*  background-color: whitesmoke;*/
-/*  align-items: stretch;*/
-/*}*/
+#aboutContent > h2 {
+  color: black;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
 
-/*#aboutImage {*/
-/*  flex: 1;*/
-/*  background-image: url("../img/background/buildings-1850129_1920.jpg");*/
-/*  background-position: center;*/
-/*  background-attachment: fixed;*/
-/*}*/
+#aboutContent > p {
+  text-align: justify;
+  color: black;
+}
 
-/*#aboutContent {*/
-/*  flex: 1;*/
-/*  padding: 100px;*/
-/*}*/
+@media screen and (max-width: 767px) {
+  #about {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: stretch;
+  }
 
-/*#aboutContent > h2 {*/
-/*  color: darkgray;*/
-/*  font-weight: bold;*/
-/*  margin-bottom: 10px;*/
-/*}*/
+  #aboutImage {
+    display: none;
+  }
 
-/*#aboutContent > p {*/
-/*  text-align: justify;*/
-/*  color: darkgray;*/
-/*  font-size: 1.3em;*/
-/*}*/
+  #aboutContent {
+    flex: 1;
+    padding: 80px 30px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  #about {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    align-items: stretch;
+  }
+
+  #aboutImage {
+    flex: 1;
+    background-image: url("../img/background/buildings-1850129_1920.jpg");
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  #aboutContent {
+    flex: 1;
+    padding: 100px;
+  }
+}
 
 /* ----------------------------------------------------- Games ------------------------------------------------------ */
 
