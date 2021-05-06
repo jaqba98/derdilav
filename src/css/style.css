@@ -14,9 +14,7 @@
 
 /* HTML */
 
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 /* NAV */
 
@@ -85,9 +83,7 @@ nav {
     transform: translateX(-100%);
   }
 
-  #menu > li {
-    line-height: 60px;
-  }
+  #menu > li { line-height: 60px; }
 
   #menu > li > a {
     width: 100%;
@@ -98,9 +94,7 @@ nav {
     text-transform: uppercase;
   }
 
-  #menu > li > a:focus {
-    background-color: gray;
-  }
+  #menu > li > a:focus { background-color: gray; }
 }
 
 @media screen and (min-width: 767px) {
@@ -120,13 +114,9 @@ nav {
     justify-content: flex-end;
   }
 
-  #menu > li {
-    display: inline-block;
-  }
+  #menu > li { display: inline-block; }
 
-  #menu > li > a {
-    margin-right: 10px;
-  }
+  #menu > li > a { margin-right: 10px; }
 
   #menu > li > a {
     padding: 10px;
