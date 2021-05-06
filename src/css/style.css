@@ -146,42 +146,33 @@ nav {
   }
 }
 
-/* Header */
+/* HEADER */
 
-/*#home {*/
-/*  min-height: calc(100vh - 160px);*/
-/*  background-image: url("../img/background/home-office-2452806_1920.jpg");*/
-/*  background-position: center;*/
-/*  background-attachment: fixed;*/
-/*  user-select: none;*/
-/*  margin: 50px;*/
-/*}*/
+header {
+  min-height: calc(100vh - 60px);
+  background-image: url("../img/background/home-office-2452806_1920.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  user-select: none;
+}
 
-/*#home > .content {*/
-/*  width: 100%;*/
-/*  min-height: calc(100vh - 160px);*/
-/*  background-color: black;*/
-/*  opacity: 0.9;*/
-/*  display: flex;*/
-/*  align-items: center;*/
-/*  position: relative;*/
-/*}*/
+#headerContent {
+  width: 100%;
+  min-height: calc(100vh - 60px);
+  background-color: rgba(0, 0, 0, .9);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
 
-/*#logo {*/
-/*  margin: auto;*/
-/*}*/
+#logo {
+  margin: 50px auto;
+  width: 200px;
+}
 
-/*#logo > img {*/
-/*  width: 350px;*/
-/*}*/
-
-/*#home > .content > p {*/
-/*  position: absolute;*/
-/*  bottom: 50px;*/
-/*  right: 50px;*/
-/*  font-size: 20px;*/
-/*  color: white;*/
-/*}*/
+@media screen and (max-width: 767px) {
+  #logo { width: 40%; }
+}
 
 /* ----------------------------------------------------- About ------------------------------------------------------ */
 
