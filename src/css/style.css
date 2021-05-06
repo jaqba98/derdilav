@@ -179,7 +179,11 @@ nav {
 #aboutContent > h2 {
   color: black;
   font-weight: bold;
-  margin-bottom: 10px;
+}
+
+#aboutContent > hr {
+  margin: 20px 0;
+  opacity: .25;
 }
 
 #aboutContent > p {
@@ -195,9 +199,7 @@ nav {
     align-items: stretch;
   }
 
-  #aboutImage {
-    display: none;
-  }
+  #aboutImage { display: none; }
 
   #aboutContent {
     flex: 1;
@@ -222,7 +224,7 @@ nav {
 
   #aboutContent {
     flex: 1;
-    padding: 100px;
+    padding: 50px;
   }
 }
 
